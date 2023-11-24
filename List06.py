@@ -6,4 +6,12 @@ def main(list1):
     Returns:
         list: return answer
     """
-    return
+    list2 = []
+    i = 0
+    while i < len(list1):
+        if list1[i] == 1:
+            list2 += [True]
+        else:
+            list2 += [list1[i]]
+        i += 1
+    return list2
