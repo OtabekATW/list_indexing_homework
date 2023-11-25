@@ -6,4 +6,11 @@ def main(list_num):
     Returns:
         int: return answer
     """
-    return
+    i = 0
+    mx = list_num[i]
+
+    while i < len(list_num):
+        if mx < list_num[i]:
+            mx = list_num[i]
+        i += 1
+    return mx
